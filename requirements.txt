@@ -8,4 +8,3 @@ certifi
 langchain-groq
 pypdf
 faiss-cpu
-faiss-gpu

@@ -36,7 +36,7 @@ prompt=ChatPromptTemplate.from_template(
 
 def create_vector_embeddings():
     if "vectors" not in st.session_state:
-        st.session_state.embeddings=OpenAIEmbeddings()
+        st.session_state.embeddings=OllamaEmbeddings()
         st.session_state.loader=PyPDFDirectoryLoader("Researchpaper")
         st.session_state.docs=st.session_state.loader.load()
         st.session_state.text_splitter=RecursiveCharacterTextSplitter(chunk_size=1000,chunk_overlap=200)
